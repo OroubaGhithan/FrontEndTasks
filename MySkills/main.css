@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rancho&family=Sacramento&display=swap");
+
+/* Start Variable  */
+
+:root {
+  --main-color: #66bfbf;
+  --sec-color: #11999e;
+  --section-padding: 100px;
+  --section-background: #f6f6f6;
+  --body-color: #eaf6f6;
+}
+
+/* End Variable  */
+
+/* Start Global Rules */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--section-background);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* End Global Rules */
+/* Start Skills */
+.skills {
+    /* padding-inline: var(--section-padding); */
+    background-color: var(--section-background); 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.skills  h2 {
+    font-weight: normal;
+    font-size : 30px ;
+    color: var(--main-color);
+    text-align: center;
+    margin: 0 0 50px; 
+    text-transform: uppercase;
+    /* padding-top: 20px; */
+}
+.skills .skill-box {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.skills .skill-box .skill-name{
+font-weight: bold;
+width: 100px;
+text-align: center;
+line-height: 30px;
+}
+.skills .skill-box  .skill-progress{
+background-color: #f8f8f8;
+height: 30px;
+width: calc( 100% - 115px) ;
+border-radius: 6px;
+position: relative;
+/* overflow: hidden; */
+}
+.skills .skill-box  .skill-progress .html, 
+.skills .skill-box  .skill-progress .css,
+.skills .skill-box  .skill-progress .js ,
+.skills .skill-box  .skill-progress .php ,
+.skills .skill-box  .skill-progress .c  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+.skills .skill-box  .skill-progress .html {
+    width: 75%;
+    background-color: #CDF0EA;
+    background-color: #28B5B5;
+}
+.skills .skill-box  .skill-progress .css {
+    width: 65%;
+    background-color:#E4BAD4;
+}
+.skills .skill-box  .skill-progress .js {
+    width: 25%;
+    background-color:#FCE38A;
+}
+.skills .skill-box  .skill-progress .php {
+    width: 70%;
+    background-color:#3EDBF0;
+}
+.skills .skill-box  .skill-progress .c {
+    width: 86%;
+    background-color:#F8A488;
+}
+.skills .skill-box  .skill-progress span::after {
+    content:  attr(data-progress);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -30px;
+    right: -18px;
+    height: 20px;
+    width:40px;
+    padding: 2px 0;
+    background-color: #105570;
+    border-radius: 10%;
+}
+.skills .skill-box  .skill-progress span::before  {
+content: "";
+position: absolute;
+border-style: solid;
+border-width: 10px;
+top : -10px ;
+border-color: #105570 transparent transparent  transparent;
+right: -9px;
+}
+/* End Skills */
